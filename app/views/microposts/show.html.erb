@@ -6,8 +6,9 @@
 </p>
 
 <p>
-#  <strong>Message:</strong>
-#  <%= @micropost.message %>
+  <strong>Link to a Message:</strong>
+  <%= link_to 'Message', microposts_path(@micropost) %>
+  <% link_to render 'form', micropost:@micropost  %>
 </p>
 
 <%= link_to 'Edit', edit_micropost_path(@micropost) %> |
